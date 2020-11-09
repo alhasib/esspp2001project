@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h3>This Is Product Page: </h3>
+    <!-- {% for product in product %}
+    {{ product.name }}
+    {{ product.price }}
+</br>
+{% endfor %} -->
+
+{% for product in product %}
+  <a href="{% url 'product-detail' product.id %}">{{ product.name }}</a></br>
+  {% endfor %}
+
+</body>
+</html>
