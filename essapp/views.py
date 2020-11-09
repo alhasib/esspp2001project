@@ -35,3 +35,7 @@ def add_product(request):
     form = ProductForm()
     context = {'form':form}
     return render(request, 'essapp/add_product.html', context)
+
+
+def git_check(request):
+    pass 
